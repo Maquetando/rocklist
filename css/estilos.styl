@@ -104,7 +104,41 @@ ul
 				color azul
 			&.active
 				color azul
-				
+
+#genres
+	font-size 14px
+	text-align right
+	text-transform uppercase
+	.princ
+		background transparent
+		border 2px solid gris_bajo
+		color gris_bajo
+		position relative
+		&:before
+			position absolute
+			content "+"
+			left 5px
+			font-size 17px
+			top 7px;
+	.genre
+		background azul
+		border 2px solid azul
+		position relative
+		&:after
+			position absolute
+			content "x"
+			right 5px
+			font-size 11px
+			top 11px;
+	span
+		color white
+		display inline-block
+		margin 5px
+		padding 10px 21px
+
+.espacio
+	margin-bottom 100px
+			
 //Media Queries
 @media screen and (max-width: 1100px)
 	#header
