@@ -1,4 +1,135 @@
 @import "nib"
+@import "style.css"
+
+//Variables
+gris_medio = rgb(106, 106, 106)
+gris_bajo = #C1C1C1
+azul = #00b2ee
+azul_dark = #076d8a
+
+//OOCSS
+.relative
+	position relative
+.absolute
+	position absolute
+
+//Pseudo
+::-webkit-input-placeholder
+	font-size 14px
+:-moz-placeholder
+	font-size 14px
+::-moz-placeholder
+	font-size 14px
+:-ms-input-placeholder
+	font-size 14px
 
 body
-	background orange
+	background white
+	font-family 'Ubuntu', sans-serif
+	font-size 16px
+
+figure
+	margin 0
+
+ul
+	-webkit-padding-start 0px
+	margin 0
+
+#header
+	background white
+	box-shadow 0px 2px 5px rgba(0, 0, 0, 0.19)
+	left 0
+	padding 18px 40px
+	position fixed
+	right 0
+	top 0
+	#logo, #search, #menu
+		display inline-block
+		margin 0 40px 0 0
+		vertical-align middle
+	#me
+		position absolute
+		right 40px
+		top 18px		
+		.rock_campana, .face
+			display inline-block
+			vertical-align middle
+		.rock_campana
+			color gris_medio
+			font-size 1.4em
+			margin 0 30px 0 0
+		.face
+			.rock_up
+				color gris_medio
+				font-size .4em
+			.cara
+				border-radius 50%
+				margin 0 10px 0 0
+				width 40px
+			.cara, .rock_up
+				display inline-block
+				vertical-align middle
+	#search
+		.caja
+			border 1px solid rgb(225, 225, 225)
+			padding 7px 7px 7px 39px
+			color #8F8F8F
+			font-weight 300
+			font-size 14px
+			transition all .3s
+			&:focus
+				outline none
+				border 1px solid #BCBCBC
+		.rock_search
+			left 9px
+			top 9px
+			color #B1B1B1
+	#logo
+		.logo
+			width 30px
+	
+	.rock_menu
+		display none
+
+#menu
+	li
+		list-style none
+		display inline-block
+		a
+			display block
+			color gris_medio
+			text-decoration none
+			padding 5px
+			&:hover
+				color azul
+			&.active
+				color azul
+				
+//Media Queries
+@media screen and (max-width: 1100px)
+	#header
+		text-align center
+		#me
+			position relative
+			top 0
+			right 0
+			text-align right
+			
+@media screen and (max-width: 768px)
+	#header
+		#menu
+			margin 0
+			display none
+			li
+				display block
+				a
+					background azul
+					padding 10px 0
+					margin 3px 0
+					border-radius 5px
+					color white
+		.rock_menu
+			color gris_medio
+			cursor pointer
+			display block
+			font-size 30px

@@ -2,10 +2,44 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Document</title>
-	<link rel="stylesheet" href="css/estilos.css">
+	<title>RockList</title>
+	<link rel="stylesheet" href="css/normalize.css" />
+	<link rel="stylesheet" href="css/estilos.css" />
+	<link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700' rel='stylesheet' type='text/css' />
 </head>
 <body>
+
+	<header id="header">
+		<div id="me">
+			<span class="rock_campana"></span>
+			<div class="face">
+				<img src="img/alexa.jpg" alt="Avatar de Alexa Patiño" class="cara" />
+				<span class="rock_up"></span>
+			</div>
+		</div>
+		<figure id="logo">
+			<img src="img/logo.png" class="logo" alt="RockList" title="RockList" />
+		</figure>
+		<div id="search" class="relative">
+			<input type="text" class="caja" placeholder="¿Buscas algo?" />
+			<span class="rock_search absolute"></span>
+		</div>
+		<span class="rock_menu"></span>
+		<nav id="menu">
+			<ul>
+				<li><a href="">Discover</a></li>
+				<li><a href="">Random</a></li>
+				<li><a href="">Radios</a></li>
+				<li><a href="" class="active">Playlists</a></li>
+				<li><a href="">Store</a></li>
+				<li><a href="">My Space</a></li>
+				<li><a href="">Queue</a></li>
+			</ul>
+		</nav>		
+	</header>
 	
+	<script src="lib/jquery-1.11.2.min.js"></script>
+	<script src="js/menu.js"></script>
+
 </body>
 </html>
