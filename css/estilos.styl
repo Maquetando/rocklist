@@ -24,7 +24,7 @@ azul_dark = #076d8a
 	font-size 14px
 
 body
-	background white
+	background #E5E5E5
 	font-family 'Ubuntu', sans-serif
 	font-size 16px
 
@@ -34,6 +34,47 @@ figure
 ul
 	-webkit-padding-start 0px
 	margin 0
+
+#albums
+	margin 40px 0
+#album
+	display inline-block
+	margin 15px
+	vertical-align top
+	width 230px
+	h2
+		color gris_medio
+		font-size 14px
+		font-weight 300
+		margin 0
+		text-align center
+	.cover
+		width 230px
+		height 200px
+		.img
+			margin 0 auto
+			display block
+			border-radius 4px
+			width 200px
+			height 100%
+	.pie
+		text-align center
+		padding 10px 0
+		.img
+			border-radius 50%
+			width 30px
+		.artist
+			font-size 13px
+	.img, .data
+		display inline-block
+		vertical-align middle
+
+#container
+	margin 20px auto
+	width 1200px
+	padding 15px
+	box-sizing border-box
+	text-align center
 
 #header
 	background white
@@ -107,6 +148,7 @@ ul
 
 #genres
 	font-size 14px
+	margin 20px 0 0
 	text-align right
 	text-transform uppercase
 	.princ
@@ -140,14 +182,22 @@ ul
 	margin-bottom 100px
 			
 //Media Queries
+
+@media screen and (max-width: 1200px)
+	#container
+		width 100%
+
 @media screen and (max-width: 1100px)
 	#header
+		position relative
 		text-align center
 		#me
 			position relative
 			top 0
 			right 0
 			text-align right
+	.espacio
+		display none
 			
 @media screen and (max-width: 768px)
 	#header
