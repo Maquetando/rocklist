@@ -40,14 +40,22 @@ ul
 #album
 	display inline-block
 	margin 15px
+	position relative
+	top 0
+	transition all .2s
 	vertical-align top
 	width 230px
+	&:hover
+		top -6px
 	h2
-		color gris_medio
-		font-size 14px
+		color #414141
+		font-size 15px
 		font-weight 300
 		margin 0
 		text-align center
+		span
+			color #979797
+			font-size 11px
 	.cover
 		width 230px
 		height 200px
@@ -58,11 +66,14 @@ ul
 			width 200px
 			height 100%
 	.pie
+		background rgba(0, 0, 0, 0.07)
+		margin 0 auto
+		padding 3px 0
 		text-align center
-		padding 10px 0
+		width 200px
 		.img
 			border-radius 50%
-			width 30px
+			width 40px
 		.artist
 			font-size 13px
 	.img, .data
@@ -84,6 +95,7 @@ ul
 	position fixed
 	right 0
 	top 0
+	z-index 9999999999
 	#logo, #search, #menu
 		display inline-block
 		margin 0 40px 0 0
