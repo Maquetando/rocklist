@@ -1,0 +1,230 @@
+doctype html
+html(lang="es")
+	head
+		meta(charset="UTF-8")
+		meta(name="description" content="RockList es un proyecto que hice para practicar la maquetación en HTML5 y los estilos con CSS(sty) el cual estará en github y mi portafolio")
+		title RockList
+		link(rel="stylesheet" href="css/normalize.css")
+		link(rel="stylesheet" href="css/estilos.css")
+		link(href='http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700' rel='stylesheet' type='text/css')
+
+	body
+		header(class="Header")
+			div(class="Header-profile")
+				span(class="Header-profile-rockcampana")
+				div(class="Header-profile-face")
+					img(src="img/alexa.jpg" alt="Avatar Alexa Patiño" class="Header-profile-face-cara")
+					span(class="Header-profile-face-rockup")
+			figure(class="Header-logo")
+				img(src="img/logo.png" class="Header-logo-img" alt="RockList" title="RockList")
+			div(class="Header-search relative")
+				input(type="text" class="Header-search-caja" placeholder="¿Buscas algo?")
+				span(class="Header-search-rock_search absolute")
+			span(class="Header-rock_menu")
+
+			nav(class="Header-menu")
+				ul
+					li
+						a(href="") Discover
+					li
+						a(href="") Random
+					li
+						a(href="") Radios
+					li
+						a(href="" class="active") Playlists
+					li
+						a(href="") Store
+					li
+						a(href="") My Space
+					li
+						a(href="") Queue
+
+		div(class="espacio")
+
+		section(id="container")
+
+			section(class="AlbumExtend")
+
+				article(class="AlbumExtend-playlist")
+
+					div(class="AlbumExtend-playlist-songs")
+						h2(class="AlbumExtend-playlist-songs-title") ...And Justice for All
+						p(class="AlbumExtend-playlist-songs-song") Blackened
+							span(class="AlbumExtend-playlist-songs-song-buttons")
+								a(href="" class="AlbumExtend-playlist-songs-song-buttons-action add")
+								a(href="" class="AlbumExtend-playlist-songs-song-buttons-action heart")
+								a(href="" class="AlbumExtend-playlist-songs-song-buttons-action share")
+						p(class="AlbumExtend-playlist-songs-song") ...And Justice for All
+							span(class="AlbumExtend-playlist-songs-song-buttons")
+								a(href="" class="AlbumExtend-playlist-songs-song-buttons-action add")
+								a(href="" class="AlbumExtend-playlist-songs-song-buttons-action heart")
+								a(href="" class="AlbumExtend-playlist-songs-song-buttons-action share")
+						p(class="AlbumExtend-playlist-songs-song") Eye of the Beholder
+							span(class="AlbumExtend-playlist-songs-song-buttons")
+								a(href="" class="AlbumExtend-playlist-songs-song-buttons-action add")
+								a(href="" class="AlbumExtend-playlist-songs-song-buttons-action heart")
+								a(href="" class="AlbumExtend-playlist-songs-song-buttons-action share")
+						p(class="AlbumExtend-playlist-songs-song") One
+							span(class="AlbumExtend-playlist-songs-song-buttons")
+								a(href="" class="AlbumExtend-playlist-songs-song-buttons-action add")
+								a(href="" class="AlbumExtend-playlist-songs-song-buttons-action heart")
+								a(href="" class="AlbumExtend-playlist-songs-song-buttons-action share")
+						p(class="AlbumExtend-playlist-songs-song") The Shortest Straw
+							span(class="AlbumExtend-playlist-songs-song-buttons")
+								a(href="" class="AlbumExtend-playlist-songs-song-buttons-action add")
+								a(href="" class="AlbumExtend-playlist-songs-song-buttons-action heart")
+								a(href="" class="AlbumExtend-playlist-songs-song-buttons-action share")
+						p(class="AlbumExtend-playlist-songs-song") Harvester of Sorrow
+							span(class="AlbumExtend-playlist-songs-song-buttons")
+								a(href="" class="AlbumExtend-playlist-songs-song-buttons-action add")
+								a(href="" class="AlbumExtend-playlist-songs-song-buttons-action heart")
+								a(href="" class="AlbumExtend-playlist-songs-song-buttons-action share")
+						p(class="AlbumExtend-playlist-songs-song") The Frayed Ends of Sanity
+							span(class="AlbumExtend-playlist-songs-song-buttons")
+								a(href="" class="AlbumExtend-playlist-songs-song-buttons-action add")
+								a(href="" class="AlbumExtend-playlist-songs-song-buttons-action heart")
+								a(href="" class="AlbumExtend-playlist-songs-song-buttons-action share")
+						p(class="AlbumExtend-playlist-songs-song") To Live Is to Die
+							span(class="AlbumExtend-playlist-songs-song-buttons")
+								a(href="" class="AlbumExtend-playlist-songs-song-buttons-action add")
+								a(href="" class="AlbumExtend-playlist-songs-song-buttons-action heart")
+								a(href="" class="AlbumExtend-playlist-songs-song-buttons-action share")
+						p(class="AlbumExtend-playlist-songs-song") Dyers Eve
+							span(class="AlbumExtend-playlist-songs-song-buttons")
+								a(href="" class="AlbumExtend-playlist-songs-song-buttons-action add")
+								a(href="" class="AlbumExtend-playlist-songs-song-buttons-action heart")
+								a(href="" class="AlbumExtend-playlist-songs-song-buttons-action share")
+
+
+			section(class="Albums")
+				
+				article(class="Albums-album")
+					h2(class="Albums-album-h2") ...And Justice for All #[span(class="span") 1988]
+					div(class="Albums-album-cover")
+						img(src="img/cover/and-justice-for-all.jpg" alt="...And Justice for All" class="Albums-album-cover-img")
+					footer(class="Albums-album-pie")
+						img(src="img/artist/metallica.jpg" alt="Metallica" class="Albums-album-pie-img")
+				
+				article(class="Albums-album")
+					h2(class="Albums-album-h2") ...And Justice for All #[span(class="span") 1988]
+					div(class="Albums-album-cover")
+						img(src="img/cover/and-justice-for-all.jpg" alt="...And Justice for All" class="Albums-album-cover-img")
+					footer(class="Albums-album-pie")
+						img(src="img/artist/metallica.jpg" alt="Metallica" class="Albums-album-pie-img")
+				
+				article(class="Albums-album")
+					h2(class="Albums-album-h2") ...And Justice for All #[span(class="span") 1988]
+					div(class="Albums-album-cover")
+						img(src="img/cover/and-justice-for-all.jpg" alt="...And Justice for All" class="Albums-album-cover-img")
+					footer(class="Albums-album-pie")
+						img(src="img/artist/metallica.jpg" alt="Metallica" class="Albums-album-pie-img")
+				
+				article(class="Albums-album")
+					h2(class="Albums-album-h2") ...And Justice for All #[span(class="span") 1988]
+					div(class="Albums-album-cover")
+						img(src="img/cover/and-justice-for-all.jpg" alt="...And Justice for All" class="Albums-album-cover-img")
+					footer(class="Albums-album-pie")
+						img(src="img/artist/metallica.jpg" alt="Metallica" class="Albums-album-pie-img")
+
+				article(class="Albums-album")
+					h2(class="Albums-album-h2") ...And Justice for All #[span(class="span") 1988]
+					div(class="Albums-album-cover")
+						img(src="img/cover/and-justice-for-all.jpg" alt="...And Justice for All" class="Albums-album-cover-img")
+					footer(class="Albums-album-pie")
+						img(src="img/artist/metallica.jpg" alt="Metallica" class="Albums-album-pie-img")
+				article(class="Albums-album")
+					h2(class="Albums-album-h2") ...And Justice for All #[span(class="span") 1988]
+					div(class="Albums-album-cover")
+						img(src="img/cover/and-justice-for-all.jpg" alt="...And Justice for All" class="Albums-album-cover-img")
+					footer(class="Albums-album-pie")
+						img(src="img/artist/metallica.jpg" alt="Metallica" class="Albums-album-pie-img")
+				
+				article(class="Albums-album")
+					h2(class="Albums-album-h2") ...And Justice for All #[span(class="span") 1988]
+					div(class="Albums-album-cover")
+						img(src="img/cover/and-justice-for-all.jpg" alt="...And Justice for All" class="Albums-album-cover-img")
+					footer(class="Albums-album-pie")
+						img(src="img/artist/metallica.jpg" alt="Metallica" class="Albums-album-pie-img")
+
+				article(class="Albums-album")
+					h2(class="Albums-album-h2") ...And Justice for All #[span(class="span") 1988]
+					div(class="Albums-album-cover")
+						img(src="img/cover/and-justice-for-all.jpg" alt="...And Justice for All" class="Albums-album-cover-img")
+					footer(class="Albums-album-pie")
+						img(src="img/artist/metallica.jpg" alt="Metallica" class="Albums-album-pie-img")
+				article(class="Albums-album")
+					h2(class="Albums-album-h2") ...And Justice for All #[span(class="span") 1988]
+					div(class="Albums-album-cover")
+						img(src="img/cover/and-justice-for-all.jpg" alt="...And Justice for All" class="Albums-album-cover-img")
+					footer(class="Albums-album-pie")
+						img(src="img/artist/metallica.jpg" alt="Metallica" class="Albums-album-pie-img")
+				
+				article(class="Albums-album")
+					h2(class="Albums-album-h2") ...And Justice for All #[span(class="span") 1988]
+					div(class="Albums-album-cover")
+						img(src="img/cover/and-justice-for-all.jpg" alt="...And Justice for All" class="Albums-album-cover-img")
+					footer(class="Albums-album-pie")
+						img(src="img/artist/metallica.jpg" alt="Metallica" class="Albums-album-pie-img")
+
+				article(class="Albums-album")
+					h2(class="Albums-album-h2") ...And Justice for All #[span(class="span") 1988]
+					div(class="Albums-album-cover")
+						img(src="img/cover/and-justice-for-all.jpg" alt="...And Justice for All" class="Albums-album-cover-img")
+					footer(class="Albums-album-pie")
+						img(src="img/artist/metallica.jpg" alt="Metallica" class="Albums-album-pie-img")
+
+
+			section(class="Song")
+
+				div(class="Song-data")
+					img(src="img/cover/garage-inc.jpg" alt="Garage Inc" class="Song-data-cover")
+					p(class="Song-data-name") Whiskey In The Jar
+					p(class="Song-data-artist") Metallica
+					div(class="Song-data-iconos")
+						span(class="Song-data-iconos-icono rock_share")
+						span(class="Song-data-iconos-icono rock_comments")
+						span(class="Song-data-iconos-icono rock_heart")
+						span(class="Song-data-iconos-icono Song-data-iconos-mas") +
+
+				div(class="Song-ttime")
+					div(class="Song-ttime-controls")
+						span(class="Song-ttime-controls-icono rock_prev")
+						span(class="Song-ttime-controls-icono rock_play")
+						span(class="Song-ttime-controls-icono rock_next")
+						div(class="Song-ttime-time")
+							span(class="Song-ttime-time-num") 0:15
+							div(class="Song-ttime-time-line")
+							span(class="Song-ttime-time-numrest") 5:04
+
+				div(class="Song-ext")
+					div(class="Song-ext-icons")
+						span(class="Song-ext-icons-icon rock_repeat")
+						span(class="Song-ext-icons-icon rock_random")
+					div(class="Song-ext-vol")
+		//- Script
+		<script src="lib/jquery-1.11.2.min.js"></script>
+		<script src="js/menu.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
